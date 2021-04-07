@@ -1,0 +1,68 @@
+
+.rightSide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.rightSide form{
+	display: flex;
+	justify-content: space-between;
+	height: 86%;
+	width: 85%;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.CentralCypherPlate input, textarea{
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	border:none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	outline: none;
+	resize:none;
+	transition: .1s;
+	background: var(--bgColor);
+	color:var(--textColor);
+	box-sizing: border-box;
+}
+
+.CentralCypherPlate textarea:focus, input:focus{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.349);
+}
+
+.textInput{
+	height: 150px;
+}
+
+.inputImg{
+	position: absolute;
+	width: 20px;
+	background: var(--elementsBg);
+	padding: 3px;
+	border-radius: 5px;
+	right: 10px;
+	top: 7px;
+}
+
+.bottomText{
+	position: relative;
+	width: 100%;
+}
+
+.messageLen{
+	position: absolute;
+	left: 10px;
+	top: -23px;
+	padding: 2px 20px;
+	background: var(--btnColor);
+	border-radius: 5px 5px 0 0;
+	transition: .2s;
+	font-weight: bold;
+	z-index: -1;
+	color: #fff;
+}

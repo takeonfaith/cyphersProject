@@ -1,0 +1,31 @@
+html[color-theme="light"]{
+	--centerBgColor:rgba(255, 255, 255, 0.137);
+}
+
+html[color-theme="dark"]{
+	--centerBgColor:rgba(3, 3, 3, 0.137);
+}
+
+.CentralCypherPlate{
+	background: var(--centerBgColor);
+	backdrop-filter: blur(200px);
+	border-radius: 10px;
+	width: 90%;
+	max-width: 800px;
+	
+	display: flex;
+	min-height: 500px;
+	color: rgb(39, 39, 39);
+	transition: .2s;
+}
+
+
+@media all and (max-width: 1000px){
+	.CentralCypherPlate{
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+	}
+}
+
